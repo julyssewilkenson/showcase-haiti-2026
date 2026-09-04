@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Showcase Haïti 2026</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">Showcase<span>Haïti</span></a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#categories">Catégories</a></li>
+                    <li><a href="#participants">Participants</a></li>
+                    <li><a href="#candidature">Candidature</a></li>
+                    <li><a href="#equipe">Équipe</a></li>
+                    <li><a href="#calendrier">Calendrier</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== ACCUEIL ===== -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Édition 2026</span>
+                <h1 class="hero-title">La lumière sur ceux qui construisent.</h1>
+                <p class="hero-text">
+                    Une foire‑exposition pour découvrir et célébrer les jeunes talents,
+                    entrepreneurs et créateurs haïtiens.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#candidature" class="btn btn-primary">Je candidate</a>
+                    <a href="#apropos" class="btn btn-outline">Découvrir</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,40 C360,120 720,0 1080,80 C1260,120 1380,80 1440,60 L1440,120 L0,120 Z" fill="#f8f6f0"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="apropos" class="section about">
+        <div class="container">
+            <h2 class="section-title">À propos</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Showcase Haïti 2026 est une initiative annuelle qui met en lumière
+                        une nouvelle génération de créateurs, d'entrepreneurs et de talents haïtiens.
+                    </p>
+                    <p>
+                        Chaque jour, de jeunes Haïtiens développent des produits, des services,
+                        des œuvres artistiques. Pourtant, beaucoup restent méconnus faute de visibilité.
+                        Showcase crée un espace pour les faire connaître.
+                    </p>
+                    <blockquote>
+                        « Mettre en relation les talents et le public. »
+                    </blockquote>
+                </div>
+                <div class="about-mission">
+                    <h3>Notre mission</h3>
+                    <p>
+                        Mettre en lumière les jeunes Haïtiens qui créent, entreprennent et contribuent
+                        au développement de leur communauté et du pays.
+                    </p>
+                    <h3>Notre vision</h3>
+                    <p>
+                        Faire de Showcase un rendez-vous annuel reconnu en Haïti pour la découverte,
+                        la valorisation et la promotion des jeunes talents.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CATÉGORIES (3+3) ===== -->
+    <section id="categories" class="section categories">
+        <div class="container">
+            <h2 class="section-title">6 catégories</h2>
+            <p class="section-subtitle">
+                Pour cette première édition, nous accueillons des projets dans six grands domaines.
+            </p>
+            <div class="categories-grid">
+                <!-- Ligne 1 : 3 cartes -->
+                <div class="category-card">
+                    <div class="category-icon">🧵</div>
+                    <h3>Artisanat & Création</h3>
+                    <p>Crochet, couture, bijoux, sacs, décoration, objets artisanaux…</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">👗</div>
+                    <h3>Mode & Beauté</h3>
+                    <p>Stylistes, créateurs de vêtements, maquilleurs, coiffeurs, marques de mode…</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍽️</div>
+                    <h3>Gastronomie & Food Business</h3>
+                    <p>Pâtisserie, cuisine, traiteurs, produits alimentaires, boissons…</p>
+                </div>
+                <!-- Ligne 2 : 3 cartes -->
+                <div class="category-card">
+                    <div class="category-icon">💡</div>
+                    <h3>Entrepreneuriat & Innovation</h3>
+                    <p>Startups, e‑commerce, applications, services, solutions innovantes…</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Arts, Culture & Création</h3>
+                    <p>Écrivains, photographes, illustrateurs, artistes, créateurs culturels…</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎤</div>
+                    <h3>Talents & Arts de la scène</h3>
+                    <p>Chanteurs, musiciens, danseurs, comédiens, slameurs, performeurs…</p>
+                </div>
+            </div>
+            <p class="categories-note">
+                <strong>Coup de cœur Showcase :</strong> un projet ou talent qui ne correspond pas
+                exactement aux catégories mais qui présente un potentiel particulier.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== PARTICIPANTS (BÉNÉFICES) ===== -->
+    <section id="participants" class="section participants">
+        <div class="container">
+            <h2 class="section-title">Pourquoi participer ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <span class="benefit-icon">📱</span>
+                    <h3>Visibilité</h3>
+                    <p>Présentation sur les réseaux sociaux de Showcase et des membres de l’équipe.</p>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">🏛️</span>
+                    <h3>Exposition</h3>
+                    <p>Un espace physique lors de l’événement pour présenter vos produits.</p>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">🤝</span>
+                    <h3>Réseautage</h3>
+                    <p>Rencontre avec d’autres entrepreneurs, créateurs, influenceurs et professionnels.</p>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">🎥</span>
+                    <h3>Création de contenu</h3>
+                    <p>Photos, vidéos, interviews et contenus promotionnels pour vous.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CANDIDATURE ===== -->
+    <section id="candidature" class="section candidature">
+        <div class="container">
+            <h2 class="section-title">Candidater</h2>
+            <p class="section-subtitle">
+                Remplissez le formulaire ci‑dessous. Vous serez recontacté(e) pour la suite du processus.
+            </p>
+            <div class="candidature-form">
+                <!-- Ton lien Formspree -->
+                <form id="candidatureForm" action="https://formspree.io/f/xjyvoevy" method="POST">
+                    <div class="form-group">
+                        <label for="nom">Nom et prénom *</label>
+                        <input type="text" id="nom" name="nom" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" />
+                    </div>
+                    <div class="form-group">
+                        <label for="categorie">Catégorie *</label>
+                        <select id="categorie" name="categorie" required>
+                            <option value="">Sélectionnez une catégorie</option>
+                            <option value="artisanat">Artisanat & Création</option>
+                            <option value="mode">Mode & Beauté</option>
+                            <option value="gastronomie">Gastronomie & Food Business</option>
+                            <option value="entrepreneuriat">Entrepreneuriat & Innovation</option>
+                            <option value="arts">Arts, Culture & Création</option>
+                            <option value="talents">Talents & Arts de la scène</option>
+                            <option value="coupdecoeur">Coup de cœur</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="projet">Nom de votre entreprise / projet *</label>
+                        <input type="text" id="projet" name="projet" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description de votre activité *</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="reseau">Lien vers vos réseaux sociaux (Instagram, Facebook, etc.)</label>
+                        <input type="text" id="reseau" name="reseau" />
+                    </div>
+                    <div class="form-group">
+                        <label for="motivation">Pourquoi voulez‑vous participer à Showcase ? *</label>
+                        <textarea id="motivation" name="motivation" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer ma candidature</button>
+                    <p class="form-note">* Champs obligatoires</p>
+                </form>
+                <div id="formFeedback" style="display:none; margin-top: 1rem; padding: 1rem; border-radius: 8px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ÉQUIPE ===== -->
+    <section id="equipe" class="section team">
+        <div class="container">
+            <h2 class="section-title">L'équipe</h2>
+            <div class="team-grid">
+                <div class="team-member"><div class="team-avatar">👤</div><h3>Jerica</h3><p>Direction & Communication</p></div>
+                <div class="team-member"><div class="team-avatar">👤</div><h3>Harryson</h3><p>Visibilité & Relations publiques</p></div>
+                <div class="team-member"><div class="team-avatar">👤</div><h3>Jayce</h3><p>Visibilité & Relations publiques</p></div>
+                <div class="team-member"><div class="team-avatar">👤</div><h3>Camberlie</h3><p>Partenariats & Logistique</p></div>
+                <div class="team-member"><div class="team-avatar">👤</div><h3>Camberlie / Jerica</h3><p>Logistique & Coordination</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CALENDRIER (frise verticale) ===== -->
+    <section id="calendrier" class="section timeline">
+        <div class="container">
+            <h2 class="section-title">Calendrier</h2>
+            <div class="timeline-vertical">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Septembre 2026</span>
+                        <p>Lancement de l'appel à candidatures</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Fin septembre 2026</span>
+                        <p>Clôture des candidatures</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Début octobre 2026</span>
+                        <p>Sélection et annonce des participants</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mi‑octobre 2026</span>
+                        <p><strong>Showcase Haïti 2026</strong> – Jour de l'événement</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Novembre 2026</span>
+                        <p>Publication des contenus et bilan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Une question ? Écrivez‑nous.</p>
+            <!-- Ton lien Formspree -->
+            <form id="contactForm" action="https://formspree.io/f/xjyvoevy" method="POST">
+                <div class="form-group">
+                    <label for="contactNom">Nom *</label>
+                    <input type="text" id="contactNom" name="nom" required />
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email *</label>
+                    <input type="email" id="contactEmail" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message *</label>
+                    <textarea id="contactMessage" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Showcase Haïti</p>
+            <p class="footer-slogan">La lumière sur ceux qui construisent.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
