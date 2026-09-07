@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
     <!-- ===== HEADER ===== -->
     <header class="header" id="header">
         <div class="container">
-            <a href="#" class="logo">Showcase<span>Haïti</span></a>
+            <a href="#" class="logo">
+                <img src="logo-showcase.png" alt="Showcase Haïti" class="logo-img" />
+            </a>
             <nav class="nav" id="nav">
                 <ul class="nav-list">
                     <li><a href="#accueil">Accueil</a></li>
@@ -44,6 +46,28 @@
                     Une foire‑exposition pour découvrir et célébrer les jeunes talents,
                     entrepreneurs et créateurs haïtiens.
                 </p>
+
+                <!-- COMPTE À REBOURS -->
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Jours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Heures</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Secondes</span>
+                    </div>
+                </div>
+                <p class="countdown-text">avant la clôture des candidatures</p>
+
                 <div class="hero-buttons">
                     <a href="#candidature" class="btn btn-primary">Je candidate</a>
                     <a href="#apropos" class="btn btn-outline">Découvrir</a>
@@ -52,7 +76,7 @@
         </div>
         <div class="hero-wave">
             <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,40 C360,120 720,0 1080,80 C1260,120 1380,80 1440,60 L1440,120 L0,120 Z" fill="#f8f6f0"/>
+                <path d="M0,40 C360,120 720,0 1080,80 C1260,120 1380,80 1440,60 L1440,120 L0,120 Z" fill="#E4D8C3"/>
             </svg>
         </div>
     </section>
@@ -148,17 +172,17 @@
                 <div class="benefit">
                     <span class="benefit-icon">📱</span>
                     <h3>Visibilité</h3>
-                    <p>Présentation sur les réseaux sociaux de Showcase et des membres de l’équipe.</p>
+                    <p>Présentation sur les réseaux sociaux de Showcase et des membres de l'équipe.</p>
                 </div>
                 <div class="benefit">
                     <span class="benefit-icon">🏛️</span>
                     <h3>Exposition</h3>
-                    <p>Un espace physique lors de l’événement pour présenter vos produits.</p>
+                    <p>Un espace physique lors de l'événement pour présenter vos produits.</p>
                 </div>
                 <div class="benefit">
                     <span class="benefit-icon">🤝</span>
                     <h3>Réseautage</h3>
-                    <p>Rencontre avec d’autres entrepreneurs, créateurs, influenceurs et professionnels.</p>
+                    <p>Rencontre avec d'autres entrepreneurs, créateurs, influenceurs et professionnels.</p>
                 </div>
                 <div class="benefit">
                     <span class="benefit-icon">🎥</span>
@@ -177,7 +201,6 @@
                 Remplissez le formulaire ci‑dessous. Vous serez recontacté(e) pour la suite du processus.
             </p>
             <div class="candidature-form">
-                <!-- Ton lien Formspree -->
                 <form id="candidatureForm" action="https://formspree.io/f/xjyvoevy" method="POST">
                     <div class="form-group">
                         <label for="nom">Nom et prénom *</label>
@@ -233,11 +256,31 @@
         <div class="container">
             <h2 class="section-title">L'équipe</h2>
             <div class="team-grid">
-                <div class="team-member"><div class="team-avatar">👤</div><h3>Jerica</h3><p>Direction & Communication</p></div>
-                <div class="team-member"><div class="team-avatar">👤</div><h3>Harryson</h3><p>Visibilité & Relations publiques</p></div>
-                <div class="team-member"><div class="team-avatar">👤</div><h3>Jayce</h3><p>Visibilité & Relations publiques</p></div>
-                <div class="team-member"><div class="team-avatar">👤</div><h3>Camberlie</h3><p>Partenariats & Logistique</p></div>
-                <div class="team-member"><div class="team-avatar">👤</div><h3>Camberlie / Jerica</h3><p>Logistique & Coordination</p></div>
+                <div class="team-member">
+                    <img src="jerica.jpeg" alt="Jerica Innocent" class="team-photo" />
+                    <h3>Jerica Innocent</h3>
+                    <p>Direction & Communication</p>
+                </div>
+                <div class="team-member">
+                    <img src="harryson.jpeg" alt="Harryson Janis" class="team-photo" />
+                    <h3>Harryson Janis</h3>
+                    <p>Visibilité & Relations publiques</p>
+                </div>
+                <div class="team-member">
+                    <img src="jonathan.jpeg" alt="Jonathan Eloi" class="team-photo" />
+                    <h3>Jonathan Eloi</h3>
+                    <p>Création de contenu & Stratégie digitale</p>
+                </div>
+                <div class="team-member">
+                    <img src="reginald.jpeg" alt="Reginald Mesidor" class="team-photo" />
+                    <h3>Reginald Mesidor</h3>
+                    <p>Responsable Communication</p>
+                </div>
+                <div class="team-member">
+                    <img src="camberlie.jpeg" alt="Camberlie Pierre-Charles" class="team-photo" />
+                    <h3>Camberlie Pierre-Charles</h3>
+                    <p>Partenariats & Logistique</p>
+                </div>
             </div>
         </div>
     </section>
@@ -257,7 +300,7 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Fin septembre 2026</span>
+                        <span class="timeline-date">30 septembre 2026</span>
                         <p>Clôture des candidatures</p>
                     </div>
                 </div>
@@ -291,7 +334,6 @@
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <p class="section-subtitle">Une question ? Écrivez‑nous.</p>
-            <!-- Ton lien Formspree -->
             <form id="contactForm" action="https://formspree.io/f/xjyvoevy" method="POST">
                 <div class="form-group">
                     <label for="contactNom">Nom *</label>
@@ -313,8 +355,11 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Showcase Haïti</p>
+            <div class="footer-logo-container">
+                <img src="logo-s.png" alt="Showcase" class="footer-logo-img" />
+            </div>
             <p class="footer-slogan">La lumière sur ceux qui construisent.</p>
+            <p>&copy; 2026 Showcase Haïti – Tous droits réservés.</p>
         </div>
     </footer>
 
